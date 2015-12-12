@@ -2,7 +2,7 @@ FROM andrewosh/binder-base
 
 USER root
 
-RUN apt-get update && apt-get install -y postgis \
+RUN apt-get update && apt-get install -yq postgis \
                        postgresql-contrib \
                        postgresql-9.4 \
                        postgresql-client-9.4 \
