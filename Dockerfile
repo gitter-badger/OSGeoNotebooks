@@ -2,7 +2,7 @@ FROM andrewosh/binder-base
 
 USER root
 
-RUN apt-get update && apt-get install -yq postgis \
+RUN apt-get update -q && apt-get install -yq postgis \
                        postgresql-contrib \
                        postgresql-9.4 \
                        postgresql-client-9.4 \
@@ -58,23 +58,23 @@ RUN conda install -y -c IOOS --file /tmp/condalist-IOOS.txt
 RUN conda install -y -c IOOS -n python3 --file /tmp/condalist-IOOS.txt
 
 ADD getdata.sh /tmp/getdata.sh
-RUN /tmp/getdata.sh
+#RUN /tmp/getdata.sh
 
 COPY GSOC /home/main/notebooks/GSOC
 
-# setup postgresql
-USER postgres
-
-# start db and make new user and db (osgeo) listening from all host
-RUN /etc/init.d/postgresql start &&\
-    psql --command "CREATE USER main WITH SUPERUSER PASSWORD 'main';" &&\
-    createdb -O main main
-
-# add naturalhear data into postgis
-ADD natualearth.sh /tmp/natualearth.sh
-RUN /tmp/natualearth.sh
-
-RUN echo "host all  all    0.0.0.0/0  md5" >> /etc/postgresql/9.4/main/pg_hba.conf
-RUN echo "listen_addresses='*'" >> /etc/postgresql/9.4/main/postgresql.conf
-
-EXPOSE 5432
+## setup postgresql
+#USER postgres
+#
+## start db and make new user and db (osgeo) listening from all host
+#RUN /etc/init.d/postgresql start &&\
+#    psql --command "CREATE USER main WITH SUPERUSER PASSWORD 'main';" &&\
+#    createdb -O main main
+#
+## add naturalhear data into postgis
+#ADD natualearth.sh /tmp/natualearth.sh
+#RUN /tmp/natualearth.sh
+#
+#RUN echo "host all  all    0.0.0.0/0  md5" >> /etc/postgresql/9.4/main/pg_hba.conf
+#RUN echo "listen_addresses='*'" >> /etc/postgresql/9.4/main/postgresql.conf
+#
+#EXPOSE 5432
