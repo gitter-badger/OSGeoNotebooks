@@ -57,7 +57,7 @@ ADD condalist-IOOS.txt /tmp/condalist-IOOS.txt
 RUN conda install -y -c IOOS --file /tmp/condalist-IOOS.txt
 RUN conda install -y -c IOOS -n python3 --file /tmp/condalist-IOOS.txt
 
-ADD getdata.sh /tmp/getdata.sh
+#ADD getdata.sh /tmp/getdata.sh
 #RUN /tmp/getdata.sh
 
 COPY GSOC /home/main/notebooks/GSOC
