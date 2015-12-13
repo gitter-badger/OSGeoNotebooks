@@ -2,13 +2,14 @@ FROM andrewosh/binder-base
 
 USER root
 
-RUN apt-get update -q && apt-get install -yq postgis \
+RUN apt-get update -q > /dev/null 2>&1
+RUN apt-get install -yq postgis \
                        postgresql-contrib \
                        postgresql-9.4 \
                        postgresql-client-9.4 \
                        postgresql-contrib-9.4 \
                        postgresql-9.4-postgis-2.1 \
-                       ossim-core grass-core
+                       ossim-core grass-core > /dev/null 2>&1
 
 RUN echo "root:root" | chpasswd
 RUN echo "main:main" | chpasswd
