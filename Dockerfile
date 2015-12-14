@@ -54,13 +54,13 @@ RUN jupyter nbextension install CesiumWidget/static/CesiumWidget --user --quiet 
 #RUN /tmp/install_cesiumwidget.sh
 
 ADD condalist.txt /tmp/condalist.txt
-RUN conda install -y --file /tmp/condalist.txt
-RUN conda install -y -n python3 --file /tmp/condalist.txt
+RUN conda install -y --file /tmp/condalist.txt > /dev/null 2>&1
+RUN conda install -y -n python3 --file /tmp/condalist.txt > /dev/null 2>&1
 
 
 ADD condalist-IOOS.txt /tmp/condalist-IOOS.txt
-RUN conda install -y -c IOOS --file /tmp/condalist-IOOS.txt
-RUN conda install -y -c IOOS -n python3 --file /tmp/condalist-IOOS.txt
+RUN conda install -y -c IOOS --file /tmp/condalist-IOOS.txt > /dev/null 2>&1
+RUN conda install -y -c IOOS -n python3 --file /tmp/condalist-IOOS.txt > /dev/null 2>&1
 
 COPY GSOC /home/main/notebooks/GSOC
 
