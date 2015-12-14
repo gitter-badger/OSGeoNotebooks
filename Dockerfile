@@ -18,26 +18,27 @@ ADD pgstart.sh /usr/local/bin/pgstart.sh
 
 USER main
 
-RUN conda update conda
-RUN conda install anaconda=2.4.1
+RUN conda update conda > /dev/null 2>&1
+RUN conda install anaconda=2.4.1 > /dev/null 2>&1
 
 # install demo support
 RUN conda install \
     ipywidgets \
-    numpy \
-  && pip install \
+    numpy > /dev/null 2>&1
+
+RUN pip install \
     czml \
-    geocoder
+    geocoder > /dev/null 2>&1
 
 RUN /home/main/anaconda/envs/python3/bin/pip install --upgrade pip
 RUN /home/main/anaconda/envs/python3/bin/pip install \
     czml \
     geocoder \
-    ipywidgets
+    ipywidgets > /dev/null 2>&1
 
 
 #RUN git clone https://github.com/epifanio/CesiumWidget.git --depth=1
-RUN git clone  https://github.com/OSGeo-live/CesiumWidget --depth=1
+RUN git clone  https://github.com/OSGeo-live/CesiumWidget --depth=1 > /dev/null 2>&1
 
 
 #WORKDIR CesiumWidget
