@@ -64,7 +64,7 @@ RUN conda install -y -c IOOS -n python3 --file /tmp/condalist-IOOS.txt > /dev/nu
 
 COPY GSOC /home/main/notebooks/GSOC
 
-USER ROOT
+USER root
 ADD getdata.sh /tmp/getdata.sh
 RUN /tmp/getdata.sh
 RUN chown -R main /home/main/notebooks/
