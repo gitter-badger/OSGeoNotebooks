@@ -43,12 +43,12 @@ RUN git clone  https://github.com/OSGeo-live/CesiumWidget --depth=1
 
 WORKDIR CesiumWidget
 
-RUN python setup.py install # > /dev/null 2>&1
-RUN /home/main/anaconda/envs/python3/bin/python setup.py install #  > /dev/null 2>&1
+RUN python setup.py install > /dev/null 2>&1
+RUN /home/main/anaconda/envs/python3/bin/python setup.py install > /dev/null 2>&1
 
 # jupyter-pip so crazy. this is cheating, as a real user wouldn't have
 # the source checked out...
-RUN jupyter nbextension install CesiumWidget/static/CesiumWidget --user --quiet #  > /dev/null 2>&1
+RUN jupyter nbextension install CesiumWidget/static/CesiumWidget --user --quiet > /dev/null 2>&1
 
 #ADD install_cesiumwidget.sh /tmp/install_cesiumwidget.sh
 #RUN /tmp/install_cesiumwidget.sh
