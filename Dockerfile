@@ -38,7 +38,7 @@ RUN /home/main/anaconda/envs/python3/bin/pip install \
 
 
 #RUN git clone https://github.com/epifanio/CesiumWidget.git --depth=1
-RUN git clone  https://github.com/OSGeo-live/CesiumWidget --depth=1 > /dev/null 2>&1
+RUN git clone  https://github.com/OSGeo-live/CesiumWidget --depth=1
 
 
 #WORKDIR CesiumWidget
