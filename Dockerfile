@@ -64,8 +64,8 @@ RUN conda install -y -c IOOS -n python3 --file /tmp/condalist-IOOS.txt
 
 COPY GSOC /home/main/notebooks/GSOC
 
-ADD getdata.sh /tmp/getdata.sh
-RUN /tmp/getdata.sh
+#ADD getdata.sh /tmp/getdata.sh
+#RUN /tmp/getdata.sh
 
 
 ## setup postgresql
