@@ -18,8 +18,8 @@ ADD pgstart.sh /usr/local/bin/pgstart.sh
 
 USER main
 
-RUN conda update conda > /dev/null 2>&1
-RUN conda install anaconda=2.4.1 > /dev/null 2>&1
+#RUN conda update conda > /dev/null 2>&1
+#RUN conda install anaconda=2.4.1 > /dev/null 2>&1
 
 # install demo support
 RUN conda install \
