@@ -76,10 +76,10 @@ USER postgres
 ## start db and make new user and db (osgeo) listening from all host
 RUN /etc/init.d/postgresql start &&\
     /usr/bin/psql --command "CREATE USER main WITH SUPERUSER PASSWORD 'main';" &&\
-    createdb -O main main &&\
-    createdb natural_earth2 &&\
-    psql natural_earth2 -c 'create extension postgis;' &&\
-    psql natural_earth2 -f /usr/share/postgresql/9.4/contrib/postgis-2.1/legacy.sql
+    /usr/bin/createdb -O main main &&\
+    /usr/bin/createdb natural_earth2 &&\
+    /usr/bin/psql natural_earth2 -c 'create extension postgis;' &&\
+    /usr/bin/psql natural_earth2 -f /usr/share/postgresql/9.4/contrib/postgis-2.1/legacy.sql
 
 ## add naturalhear data into postgis
 #ADD naturalearth.sh /tmp/naturalearth.sh
