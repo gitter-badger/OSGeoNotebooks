@@ -1,5 +1,4 @@
 # OSGeo-Live GSOC2015
-
 ---
 
 # Open Source Geospatial Notebooks
@@ -27,7 +26,7 @@
   Since one of the main goals of OSGeo-Live is for education, this will substantially improve the *live-user* experience in having access to many tools under the OSGeo umbrella. 
   The OSGeo-Live user will learn how to bring all this software together as well as learn how to process geospatial data using other standard scientific tools for data exploration.
 
-###[Notebooks](https://github.com/epifanio/OSGeoNotebooks/blob/master/GSOC/notebooks/Introduction.ipynb):
+###[Notebooks](https://github.com/epifanio/OSGeoNotebooks/blob/master/GSOC/notebooks/Introduction.ipynb)
 
 ---
 
