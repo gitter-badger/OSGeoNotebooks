@@ -91,3 +91,10 @@ RUN echo "host all  all    0.0.0.0/0  md5" >> /etc/postgresql/9.4/main/pg_hba.co
 RUN echo "listen_addresses='*'" >> /etc/postgresql/9.4/main/postgresql.conf
 #
 #EXPOSE 5432
+
+USER main
+
+COPY docs/images /home/main/notebooks/GSOC/docs/images
+COPY docs /tmp/docs
+ADD build_docs.sh /tmp/build_docs.sh
+RUN /tmp/build_docs.sh
