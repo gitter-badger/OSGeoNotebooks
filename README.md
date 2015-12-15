@@ -1,7 +1,4 @@
-# OSGeo-Live GSOC2015
----
-
-# Open Source Geospatial Notebooks
+# Open Source Geospatial Notebooks (OSGeo-Live GSOC 2015)
 
 ##Abstract:
 
@@ -33,3 +30,5 @@
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/epifanio/OSGeoNotebooks)
 
 [![Join the chat at https://gitter.im/epifanio/OSGeoNotebooks](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/epifanio/OSGeoNotebooks?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+
