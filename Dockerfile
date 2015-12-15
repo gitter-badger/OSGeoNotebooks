@@ -82,8 +82,8 @@ RUN /etc/init.d/postgresql start &&\
     /usr/bin/psql natural_earth2 -f /usr/share/postgresql/9.4/contrib/postgis-2.1/legacy.sql
 
 ## add naturalhear data into postgis
-#ADD naturalearth.sh /tmp/naturalearth.sh
-#RUN /tmp/naturalearth.sh
+ADD naturalearth.sh /tmp/naturalearth.sh
+RUN /tmp/naturalearth.sh
 #
 RUN echo "host all  all    0.0.0.0/0  md5" >> /etc/postgresql/9.4/main/pg_hba.conf
 RUN echo "listen_addresses='*'" >> /etc/postgresql/9.4/main/postgresql.conf
