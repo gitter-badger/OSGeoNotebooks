@@ -1,5 +1,7 @@
 # Open Source Geospatial Notebooks 
 
+[![Join the chat at https://gitter.im/epifanio/OSGeoNotebooks](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/epifanio/OSGeoNotebooks?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 **OSGeo-Live GSOC 2015**
 
 **Student:**
