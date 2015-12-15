@@ -29,7 +29,7 @@
   This work will not only include python libraries, but thanks to recently added support for different type of kernels, will support R, Octave Bash and more. Because it supports Bash, it is now possible to include in a notebook any command line tool installed on OSGeo-Live. Since one of the main goals of OSGeo-Live is for education, this will substantially improve the user experience in having access to many tools under the OSGeo umbrella. The OSGeo-Live user will learn how to bring all this software together as well as learn how to process geospatial data using other standard scientific tools for data exploration.
  
 ###Topic list
-* [Access to Geospatial data](https://github.com/username/OSGeoNotebooks/blob/master/GSOC/notebooks/Access to Geospatial data/Introduction.ipynb):
+* [Access to Geospatial data](https://github.com/epifanio/OSGeoNotebooks/blob/master/GSOC/notebooks/Access to Geospatial data/Introduction.ipynb):
     * GDAL-OGR Quickstart
     * GDAL-OGR Python Cook Book
     * OSSIM Quickstart
