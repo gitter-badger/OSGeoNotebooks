@@ -97,4 +97,4 @@ USER main
 COPY docs/images /home/main/notebooks/GSOC/docs/images
 COPY docs /tmp/docs
 ADD build_docs.sh /tmp/build_docs.sh
-RUN /tmp/build_docs.sh
+#RUN /tmp/build_docs.sh
