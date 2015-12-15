@@ -16,3 +16,4 @@ pillow
 gdal
 pyproj
 netCDF4
+sphinx
