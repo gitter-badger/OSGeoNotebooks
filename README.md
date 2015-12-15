@@ -30,7 +30,7 @@
  
 
 ###Topic list
-* Access to Geospatial data:
+* [Access to Geospatial data](GSOC/notebooks/Access to Geospatial data/Introduction.ipynb):
     * GDAL-OGR Quickstart
     * GDAL-OGR Python Cook Book
     * OSSIM Quickstart
