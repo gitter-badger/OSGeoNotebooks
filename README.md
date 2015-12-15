@@ -1,20 +1,16 @@
 # OSGeo-Live GSOC2015
 
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/epifanio/OSGeoNotebooks)
-
-
 ---
 
 # Open Source Geospatial Notebooks
 
 ##Abstract:
 
-   This GSoC 2015 Idea will focus on the development of a cross-projects python library with the aim of bridging together the several software libraries already installed on the live through the use of the  [Jupyter notebook](http://jupyter.org) server in a series of geospatial notebooks. 
+   This GSoC 2015 Idea will focus on the development of a cross-projects python library with the aim of bridging together the several software libraries already installed on the live through the use of the  [Jupyter notebook](http://jupyter.org) server in a series of open source geospatial notebooks. 
 
 ##Introduction
   
   OSGeo-Live is a self-contained bootable DVD, USB thumb drive or Virtual Machine based on Lubuntu, that allows you to try a wide variety of open source geospatial software without installing anything. It is composed entirely of free software, allowing it to be freely distributed, duplicated and passed around. It provides pre-configured applications for a range of geospatial use cases, including storage, publishing, viewing, analysis and manipulation of data. It also contains sample datasets and documentation.
-  
 
 ##Background
  
@@ -24,20 +20,17 @@
  
 ##The idea
   
-  This GSoC 2015 Idea will focus on the development of a cross-projects python library with the aim of bridging together the several software libraries already installed on the live through the use of the Jupyter notebook server [1] in a series of "topic-oriented" geospatial notebooks.
+  This GSoC 2015 Idea will focus on the development of a set cross-projects digital notebooks with the aim of bridging together the several software libraries already installed on the OSGeo-Live through the use of the Jupyter notebook. The work will consist in integrate descriptive documentation and code samples in a series of "topic-oriented" geospatial notebooks.
  
-  This work will not only include python libraries, but thanks to recently added support for different type of kernels, will support R, Octave Bash and more. Because it supports Bash, it is now possible to include in a notebook any command line tool installed on OSGeo-Live. Since one of the main goals of OSGeo-Live is for education, this will substantially improve the user experience in having access to many tools under the OSGeo umbrella. The OSGeo-Live user will learn how to bring all this software together as well as learn how to process geospatial data using other standard scientific tools for data exploration.
- 
+  The notebooks developed for this work will run different programming languages including Python2, Python3, R, Octave Bash and more. 
+  Thanks to the support of multiple kernels it is possible to include in a notebook any command line tool installed on OSGeo-Live. 
+  Since one of the main goals of OSGeo-Live is for education, this will substantially improve the *live-user* experience in having access to many tools under the OSGeo umbrella. 
+  The OSGeo-Live user will learn how to bring all this software together as well as learn how to process geospatial data using other standard scientific tools for data exploration.
+
 ###[Notebooks](https://github.com/epifanio/OSGeoNotebooks/blob/master/GSOC/notebooks/Introduction.ipynb):
 
+---
 
-
-Part of this idea is to develop a software library written in python, to simplify the usage of geospatial data inside the notebook. Providing wrapper function to solve general tasks like I/O, Database connections, map display using gui widgets and rich text for data documentation and report building.
- 
-This idea integrates several projects such as GDAL, GRASS, OSSIM, R, OTB, Numpy, Scipy, Pandas, R, owslib, netcdf4-python, pycsw, openlayers/leaflet/cesium, qgis-browser, gmt, postgis, in addition to the python specific projects (e.g. fiona, shapely, geopandas, scikit-image, pysal, cartopy, iris, and more). Generally each library that has python bindings and or is accessible from the command line.
-
-
-*Note this Project plan can be subject to changes based on the feedback received by mentors and from the project's mailing list.
-
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/epifanio/OSGeoNotebooks)
 
 [![Join the chat at https://gitter.im/epifanio/OSGeoNotebooks](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/epifanio/OSGeoNotebooks?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
