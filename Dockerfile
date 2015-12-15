@@ -67,6 +67,12 @@ COPY GSOC /home/main/notebooks/GSOC
 USER root
 ADD getdata.sh /tmp/getdata.sh
 RUN /tmp/getdata.sh
+
+COPY docs/images /home/main/notebooks/GSOC/docs/images
+COPY docs /tmp/docs
+ADD build_docs.sh /tmp/build_docs.sh
+RUN /tmp/build_docs.sh
+
 RUN chown -R main /home/main/notebooks/
 RUN chmod -R 777 /home/main/notebooks/
 
@@ -91,10 +97,3 @@ RUN echo "host all  all    0.0.0.0/0  md5" >> /etc/postgresql/9.4/main/pg_hba.co
 RUN echo "listen_addresses='*'" >> /etc/postgresql/9.4/main/postgresql.conf
 #
 #EXPOSE 5432
-
-USER main
-
-COPY docs/images /home/main/notebooks/GSOC/docs/images
-COPY docs /tmp/docs
-ADD build_docs.sh /tmp/build_docs.sh
-#RUN /tmp/build_docs.sh
