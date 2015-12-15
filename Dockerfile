@@ -71,18 +71,18 @@ RUN chown -R main /home/main/notebooks/
 RUN chmod -R 777 /home/main/notebooks/
 
 ## setup postgresql
-#USER postgres
+USER postgres
 #
 ## start db and make new user and db (osgeo) listening from all host
-#RUN /etc/init.d/postgresql start &&\
-#    psql --command "CREATE USER main WITH SUPERUSER PASSWORD 'main';" &&\
-#    createdb -O main main
-#
+RUN /etc/init.d/postgresql start &&\
+    psql --command "CREATE USER main WITH SUPERUSER PASSWORD 'main';" &&\
+    createdb -O main main
+
 ## add naturalhear data into postgis
-#ADD natualearth.sh /tmp/natualearth.sh
-#RUN /tmp/natualearth.sh
+ADD natualearth.sh /tmp/natualearth.sh
+RUN /tmp/natualearth.sh
 #
-#RUN echo "host all  all    0.0.0.0/0  md5" >> /etc/postgresql/9.4/main/pg_hba.conf
-#RUN echo "listen_addresses='*'" >> /etc/postgresql/9.4/main/postgresql.conf
+RUN echo "host all  all    0.0.0.0/0  md5" >> /etc/postgresql/9.4/main/pg_hba.conf
+RUN echo "listen_addresses='*'" >> /etc/postgresql/9.4/main/postgresql.conf
 #
 #EXPOSE 5432
