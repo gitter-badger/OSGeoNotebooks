@@ -1,4 +1,11 @@
-# Open Source Geospatial Notebooks (OSGeo-Live GSOC 2015)
+# Open Source Geospatial Notebooks 
+
+OSGeo-Live GSOC 2015
+
+**Student:**
+Massimo Di Stefano
+**Mentors:**
+
 
 ##Abstract:
 
