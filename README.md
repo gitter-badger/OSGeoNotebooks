@@ -28,30 +28,11 @@
  
   This work will not only include python libraries, but thanks to recently added support for different type of kernels, will support R, Octave Bash and more. Because it supports Bash, it is now possible to include in a notebook any command line tool installed on OSGeo-Live. Since one of the main goals of OSGeo-Live is for education, this will substantially improve the user experience in having access to many tools under the OSGeo umbrella. The OSGeo-Live user will learn how to bring all this software together as well as learn how to process geospatial data using other standard scientific tools for data exploration.
  
-###Topic list
-* [Access to Geospatial data](https://github.com/epifanio/OSGeoNotebooks/blob/master/GSOC/notebooks/Access to Geospatial data/Introduction.ipynb):
-    * GDAL-OGR Quickstart
-    * GDAL-OGR Python Cook Book
-    * OSSIM Quickstart
-* Numerical cartography
-    * Spatial and Coordinate Reference System
-    * Working with coordinates
-    * The Geodesic Problem
-    * Map Projections
-    * Geometric transformation
-* Raster algebra :
-    * gdal grass array multi layer
-    * Map algebra: filtering, masking, general statistics: (this part will be dedicated to GRASS GIS, perhaps exploring the landsat 8 dataset)
-* Access to web based resources :
-    * OWSlib to access OGC web standards
-    * Processing of NETCDF dataset
-* Web-Gis :
-    * publish result of processing in HTML+JS  js widgets (openlayers, leaflet, Cesium)
-* Intro to geostatistic:
-    * Combined use of R, GRASS and Python 
- 
+###[Notebooks](https://github.com/epifanio/OSGeoNotebooks/blob/master/GSOC/notebooks/Introduction.ipynb):
 
-  Part of this idea is to develop a software library written in python, to simplify the usage of geospatial data inside the notebook. Providing wrapper function to solve general tasks like I/O, Database connections, map display using gui widgets and rich text for data documentation and report building.
+
+
+Part of this idea is to develop a software library written in python, to simplify the usage of geospatial data inside the notebook. Providing wrapper function to solve general tasks like I/O, Database connections, map display using gui widgets and rich text for data documentation and report building.
  
 This idea integrates several projects such as GDAL, GRASS, OSSIM, R, OTB, Numpy, Scipy, Pandas, R, owslib, netcdf4-python, pycsw, openlayers/leaflet/cesium, qgis-browser, gmt, postgis, in addition to the python specific projects (e.g. fiona, shapely, geopandas, scikit-image, pysal, cartopy, iris, and more). Generally each library that has python bindings and or is accessible from the command line.
 
